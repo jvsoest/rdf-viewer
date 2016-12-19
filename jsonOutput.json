@@ -1,0 +1,42 @@
+{
+  "head" : {
+    "vars" : [ "studyUri", "studyUid", "studyDesc", "studyDate" ]
+  },
+  "results" : {
+    "bindings" : [ {
+      "studyUri" : {
+        "type" : "uri",
+        "value" : "http://semantic-dicom.org/dcm#Study_1.2.826.0.1.3680043.8.1084.5.29033131601883015632600762928904880"
+      },
+      "studyUid" : {
+        "type" : "literal",
+        "value" : "1.2.826.0.1.3680043.8.1084.5.29033131601883015632600762928904880"
+      },
+      "studyDesc" : {
+        "type" : "literal",
+        "value" : "PET^RT_PETCT_Abdomen3mm (Adult)"
+      },
+      "studyDate" : {
+        "type" : "literal",
+        "value" : "20110204"
+      }
+    }, {
+      "studyUri" : {
+        "type" : "uri",
+        "value" : "http://semantic-dicom.org/dcm#Study_1.2.826.0.1.3680043.8.1084.5.30926923376872112249303302257868287"
+      },
+      "studyUid" : {
+        "type" : "literal",
+        "value" : "1.2.826.0.1.3680043.8.1084.5.30926923376872112249303302257868287"
+      },
+      "studyDesc" : {
+        "type" : "literal",
+        "value" : "PET^RT_PETCT_Abdomen3mm (Adult)"
+      },
+      "studyDate" : {
+        "type" : "literal",
+        "value" : "20110224"
+      }
+    } ]
+  }
+}
