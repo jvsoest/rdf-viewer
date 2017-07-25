@@ -15,9 +15,8 @@
 		$resourceInfoQuery = "$prefixes SELECT ?resource ?resourceLabel ?resourceClass ?resourceClassLabel WHERE { BIND(<$resourceUri> AS ?resource). OPTIONAL { ?resource rdf:type ?resourceClass. }. }";
 		$resourceInfo = executeQuery($resourceInfoQuery, $sparql_endpoint);
 		
-		$resourceClass = $resourceInfo[0]->{"resourceClass"}->{"value"};
-		
-		if(isset($resourceClass)) {
+		if(isset($resourceInfo[0]->{"resourceClass"})) {
+			$resourceClass = $resourceInfo[0]->{"resourceClass"}->{"value"};
 			if(isset($views[$resourceClass])) {
 				$viewToUse = $views[$resourceClass];
 			}
